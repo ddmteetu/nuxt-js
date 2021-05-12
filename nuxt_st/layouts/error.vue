@@ -12,6 +12,7 @@
 
   export default {
     props: ['error'],
+    layout: 'error_layout',
     components: {
       AppLogo
     }
