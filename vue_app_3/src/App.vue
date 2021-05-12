@@ -18,6 +18,12 @@
 </template>
 
 <style>
+.content {
+  font-size: 16px;
+  text-align: left;
+  margin: 20px;
+}
+
 #header {
   position: fixed;
   top: 0;
