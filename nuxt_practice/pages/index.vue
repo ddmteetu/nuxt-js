@@ -1,73 +1,32 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        nuxt_practice
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <h1>Introduction:</h1>
+    <gallery />
+    <div class="description">
+      The Toyota Land Cruiser (Japanese: トヨタ・ランドクルーザー, Toyota Rando-Kurūzā) (also sometimes spelled as LandCruiser) is a series of four-wheel drive vehicles produced by the Japanese automobile manufacturer Toyota. It is Toyota's longest running series of models and the second longest-running SUV in production behind the Chevrolet Suburban. As of 2019, the sales of the Land Cruiser totalled more than 10 million units worldwide. Production of the first generation of the Land Cruiser began in 1951 as Toyota's version of a Jeep-like vehicle. The Land Cruiser has been produced in convertible, hardtop, station wagon and cab chassis body styles. The Land Cruiser's reliability and longevity have led to huge popularity, especially in Australia, where it is the best-selling body-on-frame, four-wheel drive vehicle. Toyota also extensively tests the Land Cruiser in the Australian outback – considered to be one of the toughest operating environments in both temperature and terrain. In Japan, the Land Cruiser is exclusive to Toyota Japanese dealerships called Toyota Store. As of 2018, the Land Cruiser (J200) is available in many markets. Exceptions include Canada, Malaysia (which receives the Lexus LX instead), Hong Kong, Macau, Singapore, South Korea, Brazil, Thailand, and large parts of Europe. In Europe, the only countries where the Land Cruiser is officially sold are Gibraltar, Moldova, Russia, and Ukraine. The Land Cruiser is also hugely popular in Africa, where it is used by farmers, NGO's, UN and humanitarian organizations, by national armies (often the pickup version) as well as by irregular armed groups who turn them into 'technicals' by mounting machine guns in the rear.
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+  import gallery from '~/components/gallery.vue'
+
+  export default {
+    components: {
+      gallery
+    }
+  }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  h1 {
+    font-family: impact;
+    color: green;
+  }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px;
+  }
 </style>
