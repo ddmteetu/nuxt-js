@@ -26,6 +26,7 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  layout: 'my_layout',
   components: {
     AppLogo
   }
@@ -62,4 +63,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
