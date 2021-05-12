@@ -1,10 +1,46 @@
 <template>
   <div>
-    <nuxt/>
+    <div id="header">Header by <b><i>layouts/default.vue</i></b></div>
+
+    <div id="main"><nuxt/></div>
+
+    <div id="footer">Footer by <b><i>layouts/default.vue</i></b></div>
   </div>
 </template>
 
 <style>
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #35495E;
+  line-height: 50px;
+  z-index: 999;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#main {
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #41B883;
+  font-size: 18px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -50,4 +86,3 @@ html {
   background-color: #35495e;
 }
 </style>
-
