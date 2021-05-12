@@ -1,0 +1,14 @@
+<template>
+  <div id="spec">
+
+  </div>
+</template>
+
+<script>
+  export default {
+
+  }
+</script>
+
+<style scoped>
+</style>
