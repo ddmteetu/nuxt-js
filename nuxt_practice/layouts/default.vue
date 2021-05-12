@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Main>
+      <Navi />
       <Nuxt />
     </Main>
     <Footer />
@@ -12,12 +13,14 @@
   import Header from '@/components/header'
   import Main from '@/components/main'
   import Footer from '@/components/footer'
+  import Navi from '@/components/navi'
 
   export default {
     components: {
       Header,
       Main,
-      Footer
+      Footer,
+      Navi
     }
   }
 </script>
