@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Technical Specifications:</h1>
+    <h1 class="heading">Technical Specifications:</h1>
     <gallery />
     <ul class="tech-specs">
       <li><b>engine</b> : <i>Petrol</i></li>
@@ -31,11 +31,6 @@
 </script>
 
 <style>
-  h1 {
-    font-family: impact;
-    color: green;
-  }
-
   .tech-specs {
     list-style: none;
     text-align: center;
