@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <div>
+      <i class="fab fa-500px" style="font-size: 66px;"></i>
       <app-logo/>
       <h1 class="title">
         nuxt_st
