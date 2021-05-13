@@ -36,5 +36,6 @@ module.exports = {
       }
     }
   },
-  css: ['@/assets/page_structure.css']
+  css: ['@/assets/page_structure.css'],
+  plugins: ['@/plugins/bootstrap.js']
 }
