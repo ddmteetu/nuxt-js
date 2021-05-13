@@ -4,7 +4,9 @@
       <b>{{key}}: </b>{{value}}
     </li>
     <hr>
-    <a href="/">Return to Home</a>
+    <a href="/">
+      <i class="fas fa-home"></i>
+    </a>
   </div>
 </template>
 
