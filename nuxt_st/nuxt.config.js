@@ -37,5 +37,8 @@ module.exports = {
     }
   },
   css: ['@/assets/page_structure.css'],
-  plugins: ['@/plugins/bootstrap.js']
+  // plugins: ['@/plugins/bootstrap.js']
+  modules: [
+    'bootstrap-vue/nuxt'
+  ]
 }
