@@ -27,6 +27,14 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  head() {
+    return {
+      title: 'HOME: pages/index.vue',
+      meta: [
+        { hid: 'description', name: 'description', content: 'HOME PAGE' }
+      ]
+    }
+  },
   // layout: 'my_layout',
   components: {
     AppLogo

@@ -14,6 +14,14 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: 'RESOURCE: pages/resource.vue',
+        meta: [
+          { hid: 'description', name: 'description', content: 'RESOURCE PAGE' }
+        ]
+      }
+    },
     data() {
       return {
         image: [

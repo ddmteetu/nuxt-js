@@ -35,6 +35,14 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: 'UI: pages/ui.vue',
+        meta: [
+          { hid: 'description', name: 'description', content: 'UI PAGE' }
+        ]
+      }
+    },
     data() {
       return {
         dismissSecs: 10,
