@@ -4,6 +4,8 @@
       <b>{{key}}: </b>{{value}}
     </li>
     <hr>
+    <img src="/error.gif" alt="error">
+    <hr>
     <a href="/">
       <i class="fas fa-home"></i>
     </a>
@@ -27,12 +29,15 @@
 
 <style scoped>
   #error_page {
-    border: 2px dashed blue;
-    border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 22px;
     line-height: 36px;
+  }
+
+  #error_page img {
+    margin: 10px;
+    width: 45%;
   }
 
   #error_page a {
