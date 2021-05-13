@@ -1,6 +1,8 @@
 <template>
   <div id="vuex">
     {{$store.state.msg}}
+    <hr />
+    {{$store.state.module_1.msg}}
   </div>
 </template>
 
