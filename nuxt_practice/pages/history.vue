@@ -12,6 +12,14 @@
   import gallery from '~/components/gallery.vue'
 
   export default {
+    head() {
+      return {
+        title: 'History',
+        meta: [
+          { hid: 'description', name: 'description', content: 'History of Toyota Land Cruiser' }
+        ]
+      }
+    },
     components: {
       gallery
     }

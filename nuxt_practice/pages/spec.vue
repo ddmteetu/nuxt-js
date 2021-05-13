@@ -16,6 +16,14 @@
   import gallery from '~/components/gallery.vue'
 
   export default {
+    head() {
+      return {
+        title: 'Technical Specifications',
+        meta: [
+          { hid: 'description', name: 'description', content: 'Technical Specification of Toyota Land Cruiser' }
+        ]
+      }
+    },
     components: {
       gallery
     }
