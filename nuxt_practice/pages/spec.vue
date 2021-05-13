@@ -3,11 +3,9 @@
     <h1 class="heading">Technical Specifications:</h1>
     <gallery />
     <ul class="tech-specs">
-      <li><b>engine</b> : <i>Petrol</i></li>
-      <li><b>gearbox</b> : <i>Automatic</i></li>
-      <li><b>acceleration</b> : <i>6.0</i></li>
-      <li><b>displacement</b> : <i>5.7</i></li>
-      <li><b>turbo</b> : <i>No</i></li>
+      <li v-for="(value, key, index) in $store.state.spec" :key="index">
+        <b>{{key}}</b> : <span>{{value}}</span>
+      </li>
     </ul>
   </div>
 </template>
