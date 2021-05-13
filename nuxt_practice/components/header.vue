@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    Header by comp./header.vue + layout/default.vue
+    <Avatar icon="ios-person" size="large" /> Header by comp./header.vue + layout/default.vue
   </div>
 </template>
 
