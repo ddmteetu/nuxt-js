@@ -34,6 +34,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: ['@/assets/page_structure.css']
 }
-
