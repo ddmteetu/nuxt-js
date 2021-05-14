@@ -16,7 +16,7 @@
   export default {
     head() {
       return {
-        title: 'RESOURCE: pages/resource.vue',
+        title: 'RESOURCE: pages/resource/index.vue',
         meta: [
           { hid: 'description', name: 'description', content: 'RESOURCE PAGE' }
         ]

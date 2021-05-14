@@ -37,7 +37,7 @@
   export default {
     head() {
       return {
-        title: 'UI: pages/ui.vue',
+        title: 'UI: pages/ui/index.vue',
         meta: [
           { hid: 'description', name: 'description', content: 'UI PAGE' }
         ]
