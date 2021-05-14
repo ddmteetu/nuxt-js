@@ -2,11 +2,21 @@
   <div>
     <div id="header" style="background-color: #35495E;">Header by <b><i>layouts/default.vue</i></b></div>
 
-    <div id="main"><nuxt/></div>
+    <div id="main"><navi /><nuxt/></div>
 
     <div id="footer" style="background-color: #41B883;">Footer by <b><i>layouts/default.vue</i></b></div>
   </div>
 </template>
+
+<script>
+  import navi from '@/components/navi'
+
+  export default {
+    components: {
+      navi
+    }
+  }
+</script>
 
 <style>
 html {
