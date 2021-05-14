@@ -1,18 +1,23 @@
 <template>
   <div style="padding: 15px;">
     <b-card
-      border-variant="primary"
-      footer-bg-variant="primary"
-      text-variant="primary"
+      border-variant="success"
+      footer-bg-variant="success"
+      text-variant="success"
     >
       <p>
         <i class="fas fa-file-code"></i>
-        <span>pages/id/_id.vue</span>
+        <span>pages/_id/detail.vue</span>
       </p>
-      <b-alert show variant="primary">
+      <b-alert show variant="success">
+        <h3>Detail Page</h3>
         <i class="fas fa-map-marked-alt"></i>
         <b>ID: </b>
         <b>{{$route.params.id}}</b>
+        <hr>
+        <nuxt-link :to="{name: 'id', params: {id: $route.params.id}}">
+          ID Page
+        </nuxt-link>
       </b-alert>
       <div slot="footer">
         <span style="color: white;">Dynamic Route</span>
