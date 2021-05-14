@@ -36,7 +36,7 @@ module.exports = {
       }
     }
   },
-  css: ['@/assets/page_structure.css', '@/assets/transition.css'],
+  css: ['@/assets/page_structure.css', '@/assets/transition.css', '@/assets/animate.css'],
   // plugins: ['@/plugins/bootstrap.js']
   modules: [
     'bootstrap-vue/nuxt'

@@ -27,7 +27,11 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  transition: 'prefix',
+  transition: {
+    duration: 1000,
+    enterActiveClass: 'animated slideInUp',
+    leaveActiveClass: 'animated slideOutDown'
+  },
   head() {
     return {
       title: 'HOME: pages/index.vue',
