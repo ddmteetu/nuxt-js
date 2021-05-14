@@ -7,7 +7,7 @@
     >
       <p>
         <i class="fas fa-file-code"></i>
-        <span>pages/_id/detail.vue</span>
+        <span>pages/id/_id/detail.vue</span>
       </p>
       <b-alert show variant="success">
         <h3>Detail Page</h3>
@@ -15,7 +15,7 @@
         <b>ID: </b>
         <b>{{$route.params.id}}</b>
         <hr>
-        <nuxt-link :to="{name: 'id', params: {id: $route.params.id}}">
+        <nuxt-link :to="{name: 'id-id', params: {id: $route.params.id}}">
           ID Page
         </nuxt-link>
       </b-alert>

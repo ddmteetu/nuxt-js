@@ -7,14 +7,14 @@
     >
       <p>
         <i class="fas fa-file-code"></i>
-        <span>pages/_id/index.vue</span>
+        <span>pages/id/_id/index.vue</span>
       </p>
       <b-alert show variant="info">
         <i class="fas fa-map-marked-alt"></i>
         <b>ID: </b>
         <b>{{$route.params.id}}</b>
         <hr>
-        <nuxt-link :to="{name: 'id-detail', params: {id: $route.params.id}}">
+        <nuxt-link :to="{name: 'id-id-detail', params: {id: $route.params.id}}">
           Detail Page
         </nuxt-link>
       </b-alert>
