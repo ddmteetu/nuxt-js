@@ -27,6 +27,7 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  transition: 'prefix',
   head() {
     return {
       title: 'HOME: pages/index.vue',

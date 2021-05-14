@@ -1,7 +1,15 @@
-.page-enter-active, .page-leave-active {
+/* .page-enter-active, .page-leave-active {
   transition: opacity .5s;
 }
 
 .page-enter, .page-leave-to {
+  opacity: 0;
+} */
+
+.prefix-enter-active, .prefix-leave-active {
+  transition: opacity .5s;
+}
+
+.prefix-enter, .prefix-leave-to {
   opacity: 0;
 }
