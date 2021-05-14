@@ -25,6 +25,18 @@
 
 <script>
   export default {
+    validate({params, query, store}) {
+      var result = /^\d+$/.test(params.id)
+      if (result) {
+        if (params.id > 0 && params.id < 100) {
+          return true
+        } else {
+          throw new Error('ID must be between 1 and 99')
+        }
+      } else {
+        throw new Error('ID must be a number!')
+      }
+    },
     // transition: {
     //  name: 'prefix'
     // },
