@@ -12,6 +12,7 @@
       <b-alert show variant="primary">
         <i class="fas fa-map-marked-alt"></i>
         <span>http://localhost:3000/route</span>
+        <b>{{$route.query.msg}}</b>
       </b-alert>
       <div slot="footer">
         <span style="color: white;">Nested Route</span>

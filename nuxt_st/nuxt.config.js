@@ -40,5 +40,9 @@ module.exports = {
   // plugins: ['@/plugins/bootstrap.js']
   modules: [
     'bootstrap-vue/nuxt'
-  ]
+  ],
+  router: {
+    // linkExactActiveClass: 'active'
+    // linkActiveClass: 'active'
+  }
 }

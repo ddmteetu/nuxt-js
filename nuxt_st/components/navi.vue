@@ -1,11 +1,11 @@
 <template>
   <div id="navi">
-    <nuxt-link to='/'>Home</nuxt-link>
-    <nuxt-link :to="{name: 'resource'}">Resource</nuxt-link>
-    <nuxt-link to='/ui'>UI</nuxt-link>
-    <nuxt-link to='/vuex'>VueX</nuxt-link>
-    <nuxt-link to='/route'>Route</nuxt-link>
-    <nuxt-link :to="{name: 'route-my_route'}">Route: my_route</nuxt-link>
+    <nuxt-link :class="{'active-link': $route.path == '/'}" to='/'>Home</nuxt-link>
+    <nuxt-link :class="{'active-link': $route.path == '/resource'}" :to="{name: 'resource'}">Resource</nuxt-link>
+    <nuxt-link :class="{'active-link': $route.path == '/ui'}" to='/ui'>UI</nuxt-link>
+    <nuxt-link :class="{'active-link': $route.path == '/vuex'}" to='/vuex'>VueX</nuxt-link>
+    <nuxt-link :class="{'active-link': $route.path == '/route'}" to='/route'>Route</nuxt-link>
+    <nuxt-link :class="{'active-link': $route.path == '/route/my_route'}" :to="{name: 'route-my_route'}">Route: my_route</nuxt-link>
   </div>
 </template>
 
@@ -29,7 +29,7 @@
     line-height: 24px;
   }
 
-  #navi a:hover {
+  #navi a:hover, .active-link {
     background-color: #007bff;
     color: white;
     border-radius: 4px;
