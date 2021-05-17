@@ -1,8 +1,8 @@
 <template>
   <div id="navi_bar">
-    <a href="/">Introduction</a>
-    <a href="/spec">Tech Spec</a>
-    <a href="/history">History</a>
+    <nuxt-link to='/'>Introduction</nuxt-link>
+    <nuxt-link to='/spec'>Tech Spec</nuxt-link>
+    <nuxt-link to='/history'>History</nuxt-link>
   </div>
 </template>
 

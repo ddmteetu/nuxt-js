@@ -6,9 +6,9 @@
     <hr>
     <img src="/error.gif" alt="error">
     <hr>
-    <a href="/">
+    <nuxt-link to='/'>
       <i class="fas fa-home"></i>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 
