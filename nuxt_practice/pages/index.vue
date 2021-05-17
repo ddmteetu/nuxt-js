@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <gallery />
-    <div class="description">
-      {{$store.state.introduction}}
-    </div>
+    <nuxt-child></nuxt-child>
   </div>
 </template>
 
@@ -11,14 +9,6 @@
   import gallery from '~/components/gallery.vue'
 
   export default {
-    head() {
-      return {
-        title: 'Introduction',
-        meta: [
-          { hid: 'description', name: 'description', content: 'Toyota Land Cruiser' }
-        ]
-      }
-    },
     components: {
       gallery
     }

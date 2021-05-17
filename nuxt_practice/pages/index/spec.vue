@@ -1,17 +1,12 @@
 <template>
-  <div class="container">
-    <gallery />
-    <ul class="tech-specs">
-      <li v-for="(value, key, index) in $store.state.spec" :key="index">
-        <b>{{key}}</b> : <span>{{value}}</span>
-      </li>
-    </ul>
-  </div>
+  <ul class="tech-specs">
+    <li v-for="(value, key, index) in $store.state.spec" :key="index">
+      <b>{{key}}</b> : <span>{{value}}</span>
+    </li>
+  </ul>
 </template>
 
 <script>
-  import gallery from '~/components/gallery.vue'
-
   export default {
     head() {
       return {
@@ -20,9 +15,6 @@
           { hid: 'description', name: 'description', content: 'Technical Specification of Toyota Land Cruiser' }
         ]
       }
-    },
-    components: {
-      gallery
     }
   }
 </script>

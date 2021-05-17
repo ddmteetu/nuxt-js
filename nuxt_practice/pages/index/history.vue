@@ -1,15 +1,10 @@
 <template>
-  <div class="container">
-    <gallery />
-    <div class="description">
-      {{$store.state.history}}
-    </div>
+  <div class="description">
+    {{$store.state.history}}
   </div>
 </template>
 
 <script>
-  import gallery from '~/components/gallery.vue'
-
   export default {
     head() {
       return {
@@ -18,9 +13,6 @@
           { hid: 'description', name: 'description', content: 'History of Toyota Land Cruiser' }
         ]
       }
-    },
-    components: {
-      gallery
     }
   }
 </script>
