@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1 class="heading">Technical Specifications:</h1>
     <gallery />
     <ul class="tech-specs">
       <li v-for="(value, key, index) in $store.state.spec" :key="index">

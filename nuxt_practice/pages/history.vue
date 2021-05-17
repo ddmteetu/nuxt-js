@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1 class="heading">History:</h1>
     <gallery />
     <div class="description">
       {{$store.state.history}}
