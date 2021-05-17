@@ -8,6 +8,7 @@
 
 <script>
   export default {
+    middleware: 'lock',
     head() {
       return {
         title: 'Technical Specifications',

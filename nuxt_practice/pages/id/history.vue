@@ -6,6 +6,7 @@
 
 <script>
   export default {
+    middleware: 'lock',
     head() {
       return {
         title: 'History',
