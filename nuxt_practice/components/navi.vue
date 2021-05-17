@@ -7,11 +7,15 @@
 </template>
 
 <style scoped>
+  .active {
+    background-color: green;
+    color: white;
+  }
   #navi_bar {
     text-align: center;
   }
 
-  #navi_bar a {
+  a {
     text-decoration: none;
     display: inline-block;
     width: 150px;
