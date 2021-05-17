@@ -7,3 +7,9 @@
     <div id="footer" style="background-color: red;">Footer: error_layout.vue in layouts/</div>
   </div>
 </template>
+
+<script>
+  export default {
+    // middleware: 'mw1'
+  }
+</script>

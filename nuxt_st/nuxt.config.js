@@ -44,5 +44,6 @@ module.exports = {
   router: {
     // linkExactActiveClass: 'active'
     // linkActiveClass: 'active'
+    // middleware: ['mw1', 'mw2']
   }
 }

@@ -25,9 +25,10 @@
 
 <script>
   export default {
-    transition: {
-      name: 'prefix'
-    },
+    middleware: 'mw1',
+    // transition: {
+    //   name: 'prefix'
+    // },
     head() {
       return {
         title: 'pages/route.vue'
