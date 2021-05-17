@@ -1,6 +1,6 @@
 <template>
   <div class="description">
-    {{$store.state.history}}
+    {{$store.state.list[$route.params.id].history}}
   </div>
 </template>
 
