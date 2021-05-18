@@ -29,19 +29,29 @@
         data_msg: "msg in data..."
       }
     },
-    asyncData(context) {
+    async asyncData(context) {
+      try{
+        const response = await axios.get('http://localhost:9000/retrieve')
+        return response.data
+      } catch(err){
+        context.error({
+          message: 'ajax problem...'
+        })
+      }
+    }
+    /* asyncData(context) {
       return axios.get('http://localhost:9000/retrieve')
         .then((res) => {
           return res.data
         })
         .catch((error) => {
           // context.error(), context.redirect()
-          /* context.error({
+          context.error({
             message: 'ajax problem, sorry...'
-          }) */
+          })
           context.redirect('/')
         })
-    }
+    } */
   }
 </script>
 
