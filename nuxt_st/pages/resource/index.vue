@@ -13,8 +13,6 @@
 </template>
 
 <script>
-  import axios from 'axios'
-
   export default {
     head() {
       return {
@@ -30,12 +28,13 @@
       }
     },
     async asyncData(context) {
+      console.log(context)
       try{
-        const response = await axios.get('http://localhost:9000/retrieve')
+        const response = await context.$axios.get('http://localhost:9000/retrieve')
         return response.data
       } catch(err){
         context.error({
-          message: 'ajax problem...'
+          message: err.message
         })
       }
     }
