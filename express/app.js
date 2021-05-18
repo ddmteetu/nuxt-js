@@ -25,8 +25,20 @@ app.use('/retrieve',(req,res)=>{
 //     res.send('sorry, unknown URL')
 // })
 
-app.use('/test', (req, res) => {
-  res.json(db)
+app.use('/home', (req, res) => {
+  res.set({
+      "Access-Control-Allow-Origin":"http://localhost:3000",
+      "Access-Control-Allow-Headers":"Content-Type"
+  })
+  const ibm = []
+  db.forEach((item) => {
+    ibm.push({
+      id: item.id,
+      brand: item.brand,
+      model: item.model
+    })
+  })
+  res.json(ibm)
 })
 
 app.all('/*',(req,res)=>{
