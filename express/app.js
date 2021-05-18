@@ -41,6 +41,18 @@ app.use('/home', (req, res) => {
   res.json([true, ibm])
 })
 
+app.use('/image/:id', (req, res) => {
+  res.set({
+      "Access-Control-Allow-Origin":"http://localhost:3000",
+      "Access-Control-Allow-Headers":"Content-Type"
+  })
+  if (/^\d+$/.test(req.params.id)) {
+    res.json([true, db[req.params.id].image])
+  } else {
+    res.json([false])
+  }
+})
+
 app.all('/*',(req,res)=>{
     // res.set({
     //     "Access-Control-Allow-Origin":"http://localhost:8080",
