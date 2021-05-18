@@ -27,7 +27,7 @@
     },
     asyncData() {
       return {
-        async_msg: "asyncData msg in data..."
+        data_msg: "asyncData msg in data..."
       }
     }
   }
