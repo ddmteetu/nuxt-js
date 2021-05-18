@@ -5,12 +5,16 @@
     </b-alert>
     <hr />
     <b-alert show variant="success">
-      {{async_msg}}
+      {{msg}}
+      <hr />
+      {{id}}
     </b-alert>
   </div>
 </template>
 
 <script>
+  import axios from 'axios'
+
   export default {
     head() {
       return {
@@ -25,10 +29,18 @@
         data_msg: "msg in data..."
       }
     },
-    asyncData() {
-      return {
-        data_msg: "asyncData msg in data..."
-      }
+    asyncData(context) {
+      return axios.get('http://localhost:9000/retrieve')
+        .then((res) => {
+          return res.data
+        })
+        .catch((error) => {
+          // context.error(), context.redirect()
+          /* context.error({
+            message: 'ajax problem, sorry...'
+          }) */
+          context.redirect('/')
+        })
     }
   }
 </script>
