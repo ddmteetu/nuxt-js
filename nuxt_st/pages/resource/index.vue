@@ -9,6 +9,12 @@
       <hr />
       {{id}}
     </b-alert>
+    <hr />
+    <b-alert show variant="primary">
+      {{$store.state.msg}}
+      <hr />
+      {{$store.state.id}}
+    </b-alert>
   </div>
 </template>
 
@@ -27,30 +33,30 @@
         data_msg: "msg in data..."
       }
     },
-    async asyncData(context) {
+    async fetch(context) {
       console.log(context)
       try{
         const response = await context.$axios.get('http://localhost:9000/retrieve')
-        return response.data
+        context.store.commit('reset_both', response.data)
       } catch(err){
         context.error({
           message: err.message
         })
       }
-    }
-    /* asyncData(context) {
-      return axios.get('http://localhost:9000/retrieve')
+    },
+    asyncData(context) {
+      return context.$axios.get('http://localhost:9000/retrieve')
         .then((res) => {
           return res.data
         })
         .catch((error) => {
           // context.error(), context.redirect()
-          context.error({
+          /* context.error({
             message: 'ajax problem, sorry...'
-          })
+          }) */
           context.redirect('/')
         })
-    } */
+    }
   }
 </script>
 
