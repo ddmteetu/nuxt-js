@@ -1,6 +1,6 @@
 <template>
   <ul class="tech-specs">
-    <li v-for="(value, key, index) in $store.state.list[$route.params.id].spec" :key="index">
+    <li v-for="(value, key, index) in spec" :key="index">
       <b>{{key}}</b> : <span>{{value}}</span>
     </li>
   </ul>
@@ -8,7 +8,20 @@
 
 <script>
   export default {
-    middleware: 'lock',
+  asyncData(context) {
+    return context.$axios.get('http://localhost:9000/spec/'+context.params.id)
+      .then((res) => {
+        if(res.data[0]) {
+          return {spec: res.data[1]}
+        } else {
+          return {spec: 'Technical Specifications not available...'}
+        }
+      })
+      .catch((err) => {
+        return {spec: 'Technical Specifications not available...'}
+      })
+  },
+  middleware: 'lock',
     head() {
       return {
         title: 'Technical Specifications',

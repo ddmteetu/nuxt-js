@@ -1,12 +1,25 @@
 <template>
   <div class="description">
-    {{$store.state.list[$route.params.id].history}}
+    {{history}}
   </div>
 </template>
 
 <script>
   export default {
-    middleware: 'lock',
+  asyncData(context) {
+    return context.$axios.get('http://localhost:9000/history/'+context.params.id)
+      .then((res) => {
+        if(res.data[0]) {
+          return {history: res.data[1]}
+        } else {
+          return {history: 'History not available...'}
+        }
+      })
+      .catch((err) => {
+        return {history: 'History not available...'}
+      })
+  },
+  middleware: 'lock',
     head() {
       return {
         title: 'History',
