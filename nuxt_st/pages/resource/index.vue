@@ -33,7 +33,7 @@
         data_msg: "msg in data..."
       }
     },
-    async fetch(context) {
+    /* async fetch(context) {
       console.log(context)
       try{
         const response = await context.$axios.get('http://localhost:9000/retrieve')
@@ -43,7 +43,7 @@
           message: err.message
         })
       }
-    },
+    }, */
     asyncData(context) {
       return context.$axios.get('http://localhost:9000/retrieve')
         .then((res) => {
