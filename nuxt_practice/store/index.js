@@ -7,6 +7,9 @@ export const state = () => ({
 export const mutations = {
   set_list(state, arg) {
     state.list = arg
+  },
+  set_image(state, arg) {
+    state.list[arg[0]].image = arg[1]
   }
 }
 
