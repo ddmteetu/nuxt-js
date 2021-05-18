@@ -1,14 +1,12 @@
 <template>
   <div id="resource">
-    <img src="~/assets/asset.jpg" />
+    <b-alert show variant="info">
+      {{data_msg}}
+    </b-alert>
     <hr />
-    <img src="/static.jpg" />
-    <!-- <hr />
-    <div id="frame"></div> -->
-    <hr />
-    <img :src="image[0]" />
-    <hr />
-    <img :src="image[1]" />
+    <b-alert show variant="success">
+      {{async_msg}}
+    </b-alert>
   </div>
 </template>
 
@@ -24,10 +22,12 @@
     },
     data() {
       return {
-        image: [
-          '~/assets/asset.jpg',
-          '/static.jpg'
-        ]
+        data_msg: "msg in data..."
+      }
+    },
+    asyncData() {
+      return {
+        async_msg: "asyncData msg in data..."
       }
     }
   }
