@@ -3,6 +3,11 @@
     <div>
       <i class="fab fa-500px" style="font-size: 66px;"></i>
       <app-logo/>
+      <b-alert show variant="primary">
+        {{$store.state.msg}}
+        <hr />
+        {{$store.state.id}}
+      </b-alert>
       <h1 class="title">
         nuxt_st
       </h1>
